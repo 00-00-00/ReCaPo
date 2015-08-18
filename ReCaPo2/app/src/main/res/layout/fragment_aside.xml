@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/fragment_aside_parent"
+    android:layout_gravity="left"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:background="#ffffffff">
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/aside_list"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        />
+
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/drawer_shadow"
+        android:layout_gravity="right|center_vertical" />
+</LinearLayout>

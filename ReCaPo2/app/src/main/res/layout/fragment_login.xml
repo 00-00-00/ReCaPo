@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_username"
+        android:layout_weight="1"
+        android:editable="true"
+        android:hint="Username"
+        android:background="@color/primary_inverse"
+        android:padding="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/login_password"
+        android:layout_weight="1"
+        android:editable="true"
+        android:hint="Password"
+        android:autoText="false"
+        android:background="@color/primary_inverse"
+        android:padding="5dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="3" />
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/login_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/inv_ic_action_accept"
+        fab:fab_colorNormal="@color/primary_inverse"
+        fab:fab_colorPressed="@color/primary_inverse_pressed"
+        fab:fab_colorRipple="@color/ripple" />
+</LinearLayout>

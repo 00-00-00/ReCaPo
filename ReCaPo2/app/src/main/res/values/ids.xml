@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="article_links" type="id"/>
+    <item name="aside_links" type="id"/>
+    <item name="header_links" type="id"/>
+    <item name="footer_links" type="id"/>
+    <item name="project_select_links" type="id"/>
+
+</resources>

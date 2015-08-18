@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    packagingOptions {
+        exclude 'README'
+    }
+
+    defaultConfig {
+        applicationId "com.ground0.recapo"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    compile 'com.android.support:support-v4:21.0.0'
+    compile 'de.sven-jacobs:loremipsum:1.0'
+    compile 'org.apmem.tools:layouts:1.8@aar'
+    compile group: 'com.google.guava', name: 'guava', version: '12.0'
+    compile files('libs/mysql-connector-java-3.0.17-ga-bin.jar')
+}
